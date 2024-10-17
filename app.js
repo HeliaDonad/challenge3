@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const config = require('config');
 const cors = require('cors');
 
-const connection = config.get("challenge3");
+const connection = config.get("mongodb");
 console.log(`Connecting to ${connection}`);
 mongoose.connect(connection);
 
